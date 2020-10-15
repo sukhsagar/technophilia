@@ -3,19 +3,35 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="">
+    <meta name="description" content="Virtual IT Fete of Cambridge International Schoo, Amritsar">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Title -->
     <title>TECHNOPHILIA 2020 - Virtual IT Fete of Cambridge International School, Amritsar</title>
+    <meta name="keywords" content="cambridge, amritsar, best cbse school, technical students, techfest, technical events, fest, virtual conference, event"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
+    <meta property=og:title content="TECHNOPHILIA 2020"/>
+    <meta property=og:url content="https://cambridgeamritsar.com/technophilia"/>
+    <meta property=og:description content="Virtual IT Fete of Cambridge International School, Amritsar">
+    <meta property=og:image content="https://cambridgeamritsar.com/technophilia/img/bg-img/1.jpg">
+    <meta property=og:image:width content=100 />
+    <meta property=og:image:height content=100 />
+    <meta property=og:type content=website />
+    <meta name=format-detection content="telephone=no">
+    <meta name=viewport content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta charset=utf-8>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/png" href="img/core-img/favicon.png">
+    <link rel="stylesheet" href="css/floating-widget.css">
 
     <!-- Favicon -->
     <link rel="icon" href="./img/core-img/favicon.png">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
-
+    
 </head>
 
 <body>
@@ -114,7 +130,7 @@
         </div>
 
         <!-- Scroll Icon -->
-        <div class="icon-scroll" id="scrollDown"></div>
+        <!-- <div class="icon-scroll" id="scrollDown" style="position: fixed;left:5px"></div> -->
     </section>
     <!-- Welcome Area End -->
 
@@ -347,43 +363,43 @@
                     <!-- Contact Form -->
                     <div class="contact_from_area mb-100 clearfix wow fadeInUp" data-wow-delay="300ms">
                         <div class="contact_form">
-                            <form action="mail.php" method="post" id="main_contact_form">
+                            <form id="form">
                                 <div class="contact_input_area">
                                     <div id="success_fail_info"></div>
                                     <div class="row">
                                         <!-- Form Group -->
                                         <div class="col-12 col-lg-6">
                                             <div class="form-group">
-                                                <input type="text" class="form-control mb-30" name="name" id="name" placeholder="Your Name">
+                                                <input type="text" class="form-control mb-30" name="Name" id="Name" placeholder="Your Name*">
                                             </div>
                                         </div>
                                         <!-- Form Group -->
                                         <div class="col-12 col-lg-6">
                                             <div class="form-group">
-                                                <input type="text" class="form-control mb-30" name="name" id="name2" placeholder="Last Name">
+                                                <input type="text" class="form-control mb-30" name="name" id="School" placeholder="School Name*">
                                             </div>
                                         </div>
                                         <!-- Form Group -->
                                         <div class="col-12 col-lg-6">
                                             <div class="form-group">
-                                                <input type="email" class="form-control mb-30" name="email" id="email" placeholder="E-mail">
+                                                <input type="email" class="form-control mb-30" name="email" id="Email" placeholder="E-mail*">
                                             </div>
                                         </div>
                                         <!-- Form Group -->
                                         <div class="col-12 col-lg-6">
                                             <div class="form-group">
-                                                <input type="text" class="form-control mb-30" name="subject" id="subject" placeholder="Your Number">
+                                                <input type="number" class="form-control mb-30" name="Mobile" id="Mobile" placeholder="Contact Number*">
                                             </div>
                                         </div>
                                         <!-- Form Group -->
                                         <div class="col-12">
                                             <div class="form-group">
-                                                <textarea name="message" class="form-control mb-30" id="message" cols="30" rows="6" placeholder="Your Message *"></textarea>
+                                                <textarea name="message" class="form-control mb-30" id="Message" cols="30" rows="6" placeholder="Your Message*"></textarea>
                                             </div>
                                         </div>
                                         <!-- Button -->
                                         <div class="col-12">
-                                            <button type="submit" class="btn confer-btn">Send Message <i class="zmdi zmdi-long-arrow-right"></i></button>
+                                            <button id='button' onclick="send()" class="btn confer-btn" value="Send Message">Send Message <i class="zmdi zmdi-long-arrow-right"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -507,7 +523,34 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/confer.bundle.js"></script>
     <!-- Active -->
     <script src="js/default-assets/active.js"></script>
+    <!-- Whatsapp Widget -->
+    <script type="text/javascript">
+        $(function() {
+          $('#WAButton').floatingWhatsApp({
+            phone: '919646421291', //WhatsApp Business phone number International format-
+            //Get it with Toky at https://toky.co/en/features/whatsapp.
+            headerTitle: 'Register!', //Popup Title
+            popupMessage: 'Hi! Please send us a message if you want to register or have any query.', //Popup Message
+            showPopup: true, //Enables popup display
+            buttonImage: '<img src="img/core-img/message.svg" />', //Button Image
+            //headerColor: 'crimson', //Custom header color
+            //backgroundColor: 'crimson', //Custom background button color
+            position: "right"
+          });
+        });
+    </script>
+    <!--Floating WhatsApp javascript-->
+    <script type="text/javascript" src="js/floating-widget.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+        emailjs.init("user_fx5BdLRxKSKMZ0tGyniin");
+        })();
+    </script>
+    <script type="text/javascript" src="js/send-message.js"></script>
 
+    
+    <div id="WAButton" style="z-index: 500;"></div>
 </body>
 
 </html>

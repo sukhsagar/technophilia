@@ -68,11 +68,11 @@
     // :: 17.0 ScrollDown Active Code
     // ******************************
 
-    $("#scrollDown").on('click', function () {
-        $('html, body').animate({
-            scrollTop: $("#about").offset().top - 75
-        }, 800);
-    });
+    // $("#scrollDown").on('click', function () {
+    //     $('html, body').animate({
+    //         scrollTop: $("#").offset().top - 75
+    //     }, 800);
+    // });
 
     // ************************************
     // :: 4.0 Instragram Slides Active Code
@@ -249,12 +249,12 @@
     // ****************************
     // :: 13.0 Scrollup Active Code
     // ****************************
-    if ($.fn.scrollUp) {
-        confer_window.scrollUp({
-            scrollSpeed: 1000,
-            scrollText: '<i class="arrow_carrot-up"</i>'
-        });
-    }
+    // if ($.fn.scrollUp) {
+    //     confer_window.scrollUp({
+    //         scrollSpeed: 1000,
+    //         scrollText: '<i class="arrow_carrot-up"</i>'
+    //     });
+    // }
 
     // *********************************
     // :: 14.0 Prevent Default 'a' Click
