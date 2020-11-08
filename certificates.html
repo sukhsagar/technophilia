@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Title -->
-    <title>TECHNOPHILIA 2020 - Virtual IT Fete of Cambridge International School, Amritsar</title>
+    <title>CERTIFICATES - TECHNOPHILIA 2020</title>
     <meta name="keywords" content="cambridge, amritsar, best cbse school, technical students, techfest, technical events, fest, virtual conference, event"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
     <meta property=og:title content="TECHNOPHILIA 2020"/>
@@ -31,10 +31,56 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+    	.notDisplay{
+    		display: none;
+    	}
+		.layout-margin-8 {
+		  margin: 3% 8%;
+		}
+
+		.card-img-top-custom {
+		  width: 50%;
+		  margin: 0 auto;
+		}
+
+		.card-title {
+		  text-align: center;
+		}
+
+		.card-shadow {
+		  -webkit-box-shadow: 0px 0px 28px 14px rgba(232,232,232,1);
+		  -moz-box-shadow: 0px 0px 28px 14px rgba(232,232,232,1);
+		  box-shadow: 0px 0px 28px 14px rgba(232,232,232,1);
+		}
+
+		.card-deck {
+		  display: flex;
+		  justify-content: space-around;
+		  flex-flow: row wrap;
+		  align-items: stretch;
+		}
+
+		.card {
+		  padding: 3% 1.5%;
+		  border: none;
+		  max-width: 375px;
+		  flex-grow: 1;
+		}
+
+		@media (min-width: 768px) {
+			.form-control {
+			  width: 500px !important;
+			  height: 50px;
+			}
+		}
+
+
+    </style>
     
 </head>
 
-<body>
+<body  onload="addStudents()">
     <!-- Preloader -->
     <div id="preloader">
         <div class="loader"></div>
@@ -65,14 +111,14 @@
                         <!-- Nav Start -->
                         <div class="classynav">
                             <ul id="nav">
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <li><a href="certificates.html">Certificates</a></li>
+                                <li><a href="index.html">Home</a></li>
+                                <li class="active"><a href="certificates.html">Certificates</a></li>
                                 <li><a href="results.html">Results</a></li>
                                 <li><a href="#contact">Contact Us</a></li>
                             </ul>
 
                             <!-- Get Tickets Button -->
-                            <a href="certificates.html" target="_blank" class="btn confer-btn mt-3 mt-lg-0 ml-3 ml-lg-5">CERTIFICATES <i class="zmdi zmdi-long-arrow-right"></i></a>
+                            <a href="#certificates" target="_blank" class="btn confer-btn mt-3 mt-lg-0 ml-3 ml-lg-5">CERTIFICATES <i class="zmdi zmdi-long-arrow-right"></i></a>
                         </div>
                         <!-- Nav End -->
                     </div>
@@ -93,16 +139,16 @@
                         <!-- Welcome Text -->
                         <div class="col-12">
                             <div class="welcome-text-two text-center">
-                                <h5 data-animation="fadeInUp" data-delay="100ms">Virtual IT Fete</h5>
+                                <h5 data-animation="fadeInUp" data-delay="100ms">CERTIFICATES</h5>
                                 <h2 data-animation="fadeInUp" data-delay="300ms">TECHNOPHILIA</h2>
                                 <!-- Event Meta -->
-                                <div class="event-meta" data-animation="fadeInUp" data-delay="500ms">
-                                    <a class="event-date" ><i class="zmdi zmdi-calendar-check"></i> November 7, 2020</a>
-                                    <a class="event-author" ><i class="zmdi zmdi-wifi-alt"></i> ONLINE</a>
+                                <div class="event-meta " data-animation="fadeInUp" data-delay="500ms">
+                                    <a class="event-date mx-auto" ><i class="zmdi zmdi-calendar "></i> The prizes and the running trophy will be sent within next 5 working days.</a>
+                                    
                                 </div>
                                 <div class="hero-btn-group" data-animation="fadeInUp" data-delay="700ms">
-                                    <a href="results.html" class="btn confer-btn m-2">View Results <i class="zmdi zmdi-long-arrow-right"></i></a>
-                                    <a href="certificates.html" class="btn confer-btn m-2">Download Certificates <i class="zmdi zmdi-long-arrow-right"></i></a>
+                                    <a href="#certificates" class="btn confer-btn m-2">Download Your Certificate <i class="zmdi zmdi-long-arrow-right"></i></a>
+                                    <!-- <a href="http://bit.ly/technophilia-student-registration" target="_blank" class="btn confer-btn m-2">Register Now <i class="zmdi zmdi-long-arrow-right"></i></a> -->
                                 </div>
                             </div>
                         </div>
@@ -110,23 +156,6 @@
                 </div>
             </div>
 
-            <!-- Single Slide -->
-            <div class="single-welcome-slide bg-img bg-overlay jarallax" style="background-image: url(img/bg-img/1.jpg);">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-center">
-                        <!-- Welcome Text -->
-                        <div class="col-12">
-                            <div class="welcome-text text-right">
-                                <h2 data-animation="fadeInUp" data-delay="300ms">TECHNOPHILIA <br>2020</h2>
-                                <h6 data-animation="fadeInUp" data-delay="500ms">Cambridge International School, Amritsar</h6>
-                                <div class="hero-btn-group" data-animation="fadeInUp" data-delay="700ms">
-                                    <a href="results.html" class="btn confer-btn">View Results <i class="zmdi zmdi-long-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             
         </div>
@@ -136,171 +165,40 @@
     </section>
     <!-- Welcome Area End -->
 
-    <!-- About Us And Countdown Area Start -->
-    <section class="about-us-countdown-area section-padding-100-0" id="about">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- About Content -->
-                <div class="col-12 col-md-6">
-                    <div class="about-content-text mb-80">
-                        <h6 class="wow fadeInUp" data-wow-delay="300ms">7<sup>th</sup> Annual IT Fete</h6>
-                        <h3 class="wow fadeInUp" data-wow-delay="300ms">ABOUT THIS EVENT</h3>
-                        <p class="wow fadeInUp" data-wow-delay="300ms">Thank you for joining us virtually for day full of interesting debates and mind-boggling competitions. See you again next year.</p>
-                        
-                        <a href="results.html" target="_blank" class="btn confer-btn mt-50 wow fadeInUp" data-wow-delay="300ms">VIEW RESULTS <i class="zmdi zmdi-long-arrow-right"></i></a>
-                    </div>
-                </div>
 
-                <!-- About Thumb -->
-                <div class="col-12 col-md-6">
-                    <div class="about-thumb mb-80 wow fadeInUp" data-wow-delay="300ms">
-                        <img src="img/bg-img/2.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Counter Up Area -->
-        <!-- <div class="countdown-up-area">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-3">
-                        <div class="countdown-content-text mb-100 wow fadeInUp" data-wow-delay="300ms">
-                            <h6>Patience is power</h6>
-                            <h4>Results will be out soon</h4>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-9">
-                        <div class="countdown-timer mb-100 wow fadeInUp" data-wow-delay="300ms">
-                            <div id="clock"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-    </section>
-    <!-- About Us And Countdown Area End -->
-
-     <!-- What We offer Area Start -->
-    <section class="what-we-offer-area section-padding-100-70" id="offer">
+     <!-- Certificates -->
+    <section id="certificates" class="what-we-offer-area section-padding-100-70" id="offer">
         <div class="container">
             <div class="row">
                 <!-- Heading -->
                 <div class="col-12">
                     <div class="section-heading-3 text-center wow fadeInUp" data-wow-delay="300ms">
-                        <p>Vitual Event</p>
-                        <h4>What We Offer</h4>
+                        <p>DOWNLOAD</p>
+                        <h4>CERTIFICATES</h4>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
-                <!-- Single We Offer Area -->
-                <div class="col-12 col-md-6 col-xl-3">
-                    <div class="single-we-offer-content text-center wow fadeInUp" data-wow-delay="0.3s">
-                        <!-- Icon -->
-                        <div class="offer-icon">
-                            <img src="img/core-img/icon.png" alt="">
-                        </div>
-                        <h5>Virtual Debates</h5>
-                        <!-- <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque</p> -->
-                    </div>
-                </div>
+            
 
-                <!-- Single We Offer Area -->
-                <div class="col-12 col-md-6 col-xl-3">
-                    <div class="single-we-offer-content text-center wow fadeInUp" data-wow-delay="0.3s">
-                        <!-- Icon -->
-                        <div class="offer-icon">
-                            <img src="img/core-img/icon-2.png" alt="">
-                        </div>
-                        <h5>Intriguing Events</h5>
-                        <!-- <p>Temporibus autem quibusdam et aut officiis debitis aut rerum</p> -->
-                    </div>
-                </div>
+            <!-- Search functionality -->
+			<nav class="navbar navbar-light justify-content-center mt-4">
+			    <form class="form">
+			        <!-- <button type="button" class="btn btn-primary btn-xs mr-3 mb-3" id="btnSort" style="background-color: #df42b1; border-color: #df42b1;">Sort By Name</button> -->
+			        <input class="form-control form-control-lg mr-sm-2" type="search" placeholder="Type your name" aria-label="Search" id="search">
+			        
+			        <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+			    </form>
+			</nav>
 
-                
+			<!-- Cards -->
+			<div class="layout-margin-8 mt-4 certificate-deck" id="certificate-deck" style="position: relative;">
+			    
+			</div>
 
-                <!-- Single We Offer Area -->
-                <div class="col-12 col-md-6 col-xl-3">
-                    <div class="single-we-offer-content text-center wow fadeInUp" data-wow-delay="0.3s">
-                        <!-- Icon -->
-                        <div class="offer-icon">
-                            <img src="img/core-img/icon-4.png" alt="">
-                        </div>
-                        <h5>Growth Hacks</h5>
-                        <!-- <p>These cases are perfectly simple and easy to distinguish in a free hour</p> -->
-                    </div>
-                </div>
-
-                <!-- Single We Offer Area -->
-                <div class="col-12 col-md-6 col-xl-3">
-                    <div class="single-we-offer-content text-center wow fadeInUp" data-wow-delay="0.3s">
-                        <!-- Icon -->
-                        <div class="offer-icon">
-                            <img src="img/core-img/icon-3.png" alt="">
-                        </div>
-                        <h5>Unlimited Fun</h5>
-                        <!-- <p>On the other hand, we denounce with righteous indignation</p> -->
-                    </div>
-                </div>
-
-            </div>
         </div>
     </section>
-    <!-- What We offer Area End -->
 
-    <!-- Our Speakings Area Start -->
-    <section class="our-speaker-area bg-img bg-gradient-overlay section-padding-100-60" style="background-image: url(img/bg-img/3.jpg);" id="talks">
-        <div class="container">
-            <div class="row">
-                <!-- Heading -->
-                <div class="col-12">
-                    <div class="section-heading text-center wow fadeInUp" data-wow-delay="300ms">
-                        <p>Short Informative Session</p>
-                        <h4>Lightening Talk</h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-2"></div>
-
-                
-
-                <!-- Single Speaker Area -->
-                <div class="col-12 col-md-12 col-lg-8">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/bg-img/5.jpg" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <!-- <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
-                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div> -->
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Learning design with the virtue of observation.</h5>
-                            <p>Ms. Samridhi Aneja</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-2"></div>
-               <!--  <div class="col-12">
-                    <div class="more-speaker-btn text-center mt-20 mb-40 wow fadeInUp" data-wow-delay="300ms">
-                        <a class="btn confer-btn-white" href="#">view all Speaker <i class="zmdi zmdi-long-arrow-right"></i></a>
-                    </div>
-                </div> -->
-            </div>
-        </div>
-    </section>
-    <!-- Our Speakings Area End -->
 
     <!-- Contact Area Start -->
     <section class="contact-our-area section-padding-100-0" id="contact">
@@ -521,6 +419,28 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
           });
         });
     </script>
+    <script type="text/javascript" src="download.js"></script>
+    <script type="text/javascript">
+    	$('#search').keyup(function (){
+		    $('.card').removeClass('d-none');
+		    var filter = $(this).val().toUpperCase(); // get the value of the input, which we filter on
+		    // $('.card-deck').find('.card .card-body h4:not(:contains("'+filter+'"))').parent().parent().addClass('d-none');
+		    // $('.certificate-deck').children().each().find('.card .card-body h4:not(:contains("'+filter+'"))').siblings().css('display','none');
+		    var card = $('.card-deck').find('.card .card-body h4:not(:contains("'+filter+'"))').parent();
+		    card.parent().css('display','none');
+		    card.siblings().each().find('.card .card-body h4:not(:contains("'+filter+'"))').parent().parent().css('display','none');
+		    $('.card-deck').find('.card .card-body h4:not(:contains("'+filter+'"))').parent().parent().css('position','absolute');
+		    $('.card-deck').find('.card .card-body h4:not(:contains("'+filter+'"))').parent().parent().css('top','0');
+		    $('.card-deck').find('.card .card-body h4:not(:contains("'+filter+'"))').parent().parent().parent().css('position','relative');
+		})
+
+
+		$('#btnSort').click(function (){
+		    $('.certificate-deck').sort(function(a,b) {
+		        return $(a).child().find(".card-title").text() > $(b).find(".card-title").text() ? 1 : -1;
+		    }).appendTo(".card-deck");
+		})
+    </script>
     <!--Floating WhatsApp javascript-->
     <script type="text/javascript" src="js/floating-widget.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
@@ -533,6 +453,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
     
     <div id="WAButton" style="z-index: 500;"></div>
+    
 </body>
 
 </html>

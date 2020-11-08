@@ -226,7 +226,7 @@
     // ****************************
 
     var countDownTimer = function(){
-        var deadline = new Date("Nov 07, 2020 09:00:00").getTime(); 
+        var deadline = new Date("Nov 07, 2020 20:00:00").getTime(); 
         var x = setInterval(function() { 
             var now = new Date().getTime(); 
             var t = deadline - now; 
@@ -238,7 +238,7 @@
         }, 1000); 
         return;
     }
-    countDownTimer();
+    // countDownTimer();
     if ($.fn.countdown) {
         // $("#clock").countdown(deadline, function (event) {
         //     $(this).html(event.strftime("<div>%m <span>Months</span></div> <div>%d <span>Days</span></div> <div>%H <span>Hours</span></div> <div>%M <span>Minutes</span></div> <div>%S <span>Seconds</span></div>"));
