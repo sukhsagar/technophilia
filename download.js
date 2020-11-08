@@ -46,7 +46,7 @@ var addStudents = function(){
 {"NAME":"RIVA KUMAR ARORA  ","SCHOOL":"THE SENIOR STUDY CANTT.","EVENT":"SCHOOLPRENEUR"},
 {"NAME":"SEHAJDEEP SINGH ","SCHOOL":"CAMBRIDGE INTERNATIONAL SCHOOL  ","EVENT":"SCHOOLPRENEUR"},
 {"NAME":"VANYA BERRY  ","SCHOOL":"CAMBRIDGE INTERNATIONAL SCHOOL  ","EVENT":"SCHOOLPRENEUR"},
-{"NAME":"SAMAIRA NOT KAUR  ","SCHOOL":"CAMBRIDGE INTERNATIONAL SCHOOL  ","EVENT":"SCHOOLPRENEUR"},
+{"NAME":"SAMAIRA JOT KAUR  ","SCHOOL":"CAMBRIDGE INTERNATIONAL SCHOOL  ","EVENT":"SCHOOLPRENEUR"},
 {"NAME":"VIDYA","SCHOOL":"CAMBRIDGE INTERNATIONAL SCHOOL  ","EVENT":"SCHOOLPRENEUR"},
 {"NAME":"PRERNA","SCHOOL":"ASHOK VATIKA PUBLIC SCHOOL","EVENT":"SCHOOLPRENEUR"},
 {"NAME":"MANNATDEEP KAUR","SCHOOL":"HOLY HEART PRESIDENCY SCHOOL","EVENT":"SCHOOLPRENEUR"},
@@ -136,23 +136,31 @@ var addStudents = function(){
 {"NAME":"HARSHIT","SCHOOL":"CAMBRIDGE INTERNATIONAL SCHOOL   ","EVENT":"DIG THE BUG"},
 {"NAME":"AMRIT KAUR","SCHOOL":"KHALSA INTERNATIONAL SCHOOL","EVENT":"DIG THE BUG"},
 {"NAME":"JASMEHAR","SCHOOL":"SPRING DALES SENIOR SCHOOL","EVENT":"DIG THE BUG"},
-{"NAME":"HARDIK","SCHOOL":"POLICE DAV PUBLIC SCHOOL","EVENT":"DIG THE BUG"}];
-	
+{"NAME":"HARDIK","SCHOOL":"POLICE DAV PUBLIC SCHOOL","EVENT":"DIG THE BUG"},
+{"NAME":"ARYA PRASOON SINHA","SCHOOL":"SPRING DALES SENIOR SCHOOL","EVENT":"TECH-PARLIAMENT"},
+{"NAME":"NIKHIL GUPTA","SCHOOL":"SPRING DALES SENIOR SCHOOL","EVENT":"TECH-PARLIAMENT"},
+{"NAME":"HARSHITA SEHGAL","SCHOOL":"SPRING DALES SENIOR SCHOOL","EVENT":"TECH-PARLIAMENT"},
+{"NAME":"SIDDHARTH KATARIA","SCHOOL":"SPRING DALES SENIOR SCHOOL","EVENT":"TECH-PARLIAMENT"},
+{"NAME":"PRIYANSHU MAINGI","SCHOOL":"SSSS MODERN HIGH SCHOOL","EVENT":"TECH-PARLIAMENT"}]	
 	var count = 0;
 	var parentDiv,baseId,div0,div1,div2,div3,name,event,school,p2,link,btn;
 	parentDiv = document.getElementById("certificate-deck");
+	div0 = document.createElement("div");
+	div0.classList.add("card-deck");
+	div0.classList.add("column");
+	
 	for ( ; count < students.length ;){
 		baseId = "student_"+count;
-		div0 = document.createElement("div");
-		div0.classList.add("card-deck");
-		div0.classList.add("row");
-		div0.classList.add("mt-3");
-		div0.classList.add("mb-3");
+		
 		//First Card 
 		div1 = document.createElement("div");
 		div1.classList.add("card");
 		div1.classList.add("card-shadow");
 		div1.classList.add("text-center");
+		div1.classList.add("col-md-3");
+		div1.classList.add("col-lg-3");
+		div1.classList.add("mb-3");
+		div1.classList.add("mt-3");
 		div1.id=baseId;
 		div2 = document.createElement("div");
 		div2.classList.add("card-body");
@@ -203,6 +211,10 @@ var addStudents = function(){
 			div1.classList.add("card");
 			div1.classList.add("card-shadow");
 			div1.classList.add("text-center");
+			div1.classList.add("col-md-3");
+			div1.classList.add("col-lg-3");
+			div1.classList.add("mb-3");
+			div1.classList.add("mt-3");
 			div1.id=baseId;
 			div2 = document.createElement("div");
 			div2.classList.add("card-body");
@@ -253,6 +265,10 @@ var addStudents = function(){
 			div1.classList.add("card");
 			div1.classList.add("card-shadow");
 			div1.classList.add("text-center");
+			div1.classList.add("col-md-3");
+			div1.classList.add("col-lg-3");
+			div1.classList.add("mb-3");
+			div1.classList.add("mt-3");
 			div1.id=baseId;
 			div2 = document.createElement("div");
 			div2.classList.add("card-body");
