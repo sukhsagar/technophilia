@@ -1,16 +1,4 @@
 
-// <div class="card card-shadow text-center">
-//     <div class="card-body">
-//         <h4 class="card-title">Rob Doe</h4>
-//         <p class="card-text">UX Designer</p>
-//         <div class="dropdown-divider"></div>
-//         <p class="card-text"><small class="text-muted">Team A</small></p>
-//         <a href="#">
-//             <button type="button" class="btn btn-outline-primary">Email</button>
-//         </a>
-//     </div>
-// </div>
-
 var addStudents = function(){
 	var students = [{"NAME":"ANTERLEEN","SCHOOL":"ASHOK VATIKA PUBLIC SCHOOL","EVENT":"CODE COMBAT"},
 {"NAME":"MANIK SHARMA","SCHOOL":"ASHOK VATIKA PUBLIC SCHOOL","EVENT":"CODE COMBAT"},
@@ -35,7 +23,7 @@ var addStudents = function(){
 {"NAME":"ADHIRAJ SINGH","SCHOOL":"DELHI PUBLIC SCHOOL","EVENT":"QUICK PICK"},
 {"NAME":"RIYA","SCHOOL":"ASHOK VATIKA PUBLIC SCHOOL","EVENT":"QUICK PICK"},
 {"NAME":"TARANPREET KAUR","SCHOOL":"SSSS MODERN HIGH SCHOOL","EVENT":"QUICK PICK"},
-{"NAME":"OJAS KAPOOR","SCHOOL":"EXCELSUM HIGH","EVENT":"QUICK PICK"},
+{"NAME":"OJASWA KAPOOR","SCHOOL":"EXCELSUM HIGH","EVENT":"QUICK PICK"},
 {"NAME":"SARGUN VIRK","SCHOOL":"CAMBRIDGE INTERNATIONAL SCHOOL  ","EVENT":"SCHOOLPRENEUR"},
 {"NAME":"GURNEET KAUR","SCHOOL":"CAMBRIDGE INTERNATIONAL SCHOOL  ","EVENT":"SCHOOLPRENEUR"},
 {"NAME":"PARAMPUNEET","SCHOOL":"DOON INTERNATIONAL SCHOOL   ","EVENT":"SCHOOLPRENEUR"},
@@ -142,6 +130,21 @@ var addStudents = function(){
 {"NAME":"HARSHITA SEHGAL","SCHOOL":"SPRING DALES SENIOR SCHOOL","EVENT":"TECH-PARLIAMENT"},
 {"NAME":"SIDDHARTH KATARIA","SCHOOL":"SPRING DALES SENIOR SCHOOL","EVENT":"TECH-PARLIAMENT"},
 {"NAME":"PRIYANSHU MAINGI","SCHOOL":"SSSS MODERN HIGH SCHOOL","EVENT":"TECH-PARLIAMENT"}]	
+	
+
+
+	// <div class="card card-shadow text-center">
+	//     <div class="card-body">
+	//         <h4 class="card-title">Rob Doe</h4>
+	//         <p class="card-text">UX Designer</p>
+	//         <div class="dropdown-divider"></div>
+	//         <p class="card-text"><small class="text-muted">Team A</small></p>
+	//         <a href="#">
+	//             <button type="button" class="btn btn-outline-primary">Email</button>
+	//         </a>
+	//     </div>
+	// </div>
+
 	var count = 0;
 	var parentDiv,baseId,div0,div1,div2,div3,name,event,school,p2,link,btn;
 	parentDiv = document.getElementById("certificate-deck");
@@ -149,7 +152,8 @@ var addStudents = function(){
 	div0.classList.add("card-deck");
 	div0.classList.add("column");
 	
-	for ( ; count < students.length ;){
+	while(count < students.length){
+
 		baseId = "student_"+count;
 		
 		//First Card 
@@ -313,7 +317,7 @@ var addStudents = function(){
 			count++;
 		}
 		
-	parentDiv.appendChild(div0);
+		parentDiv.appendChild(div0);
 		
 	}	
 	
